@@ -1,0 +1,50 @@
+{
+  "name": "diplomski-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "format": "npx prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "@metamask/jazzicon": "^2.0.0",
+    "@web3-react/core": "6.1.9",
+    "@web3-react/injected-connector": "6.0.7",
+    "ethers": "5.7.2",
+    "framer-motion": "^11.0.8",
+    "moment": "^2.30.1",
+    "prettier": "^2.8.8",
+    "react": "^18.2.0",
+    "react-animated-numbers": "^0.18.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.0",
+    "react-hotkeys-hook": "^4.5.0",
+    "react-router-dom": "^6.11.1",
+    "styled-components": "^5.3.10"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "typescript": "^5.0.2",
+    "vite": "^5.1.4",
+    "vite-plugin-node-polyfills": "^0.21.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "defiParameters": "0xFD4385FB8a78e58AfA9D92770EAf242d6B2F69cB",
+  "tokensAndOracles": {
+    "FerBTC": "0x91a3DF92A038CDe1C16c5b37993D0e9f9fabb53d",
+    "FerUSD": "0xDe29B598206e4E495D0008A4009Bd17fE61F3fF6",
+    "BTCUSDDataFeed": "0x058e1A6f5d5A534571A555672e6610899492Cf66"
+  },
+  "lendingAndBorrowingContracts": {
+    "borrowingContract": "0x17f8375ef0c01b341213b4C914221a5E8184de85",
+    "savingContract": "0xf8dE784F3d8af4Fb71741f82403ea9897AB0dedb",
+    "liquidationContract": "0xaC1D5Cd404195083caB6A620e8802042B5462367",
+    "systemBalanceContract": "0xAcf953ecA583E112119A540D33DB108fC7F5D9ED"
+  }
+}

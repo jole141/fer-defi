@@ -1,0 +1,153 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "defiParameters_",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "stc_",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "getBalance",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getBalanceDetails",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isDebtAuctionPossible",
+            "type": "bool"
+          },
+          {
+            "internalType": "bool",
+            "name": "isSurplusAuctionPossible",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentDebt",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "debtThreshold",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "currentSurplus",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "surplusThreshold",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct SystemBalance.SystemBalanceDetails",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDebt",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getSurplus",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "debtAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "increaseDebt",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "performNetting",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "transferAccruedInterestAmount",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

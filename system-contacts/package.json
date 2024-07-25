@@ -1,0 +1,55 @@
+{
+  "name": "defi-contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Josip Jurenic",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile && yarn prettier",
+    "deploy": "npx hardhat run scripts/deploy.ts",
+    "deploy:sepolia": "yarn deploy --network sepolia",
+    "deploy:mumbai": "yarn deploy --network mumbai",
+    "run:liquidationBot": "npx hardhat run scripts/liquidation-bot-FerUSD/liquidationBot.ts",
+    "run:liquidateVault": "npx hardhat run scripts/liquidation-bot-FerUSD/liquidateVault.ts",
+    "run:fakeOracleReplace": "npx hardhat run scripts/liquidation-bot-FerUSD/updateOracleAddress.ts",
+    "run:liquidationBot:sepolia": "yarn run:liquidationBot --network sepolia",
+    "run:liquidateVault:sepolia": "yarn run:liquidateVault --network sepolia",
+    "run:fakeOracleReplace:sepolia": "yarn run:fakeOracleReplace --network sepolia",
+    "contract-size": "npx hardhat size-contracts",
+    "prettier": "prettier --write --plugin=prettier-plugin-solidity 'contracts/**/*.sol'",
+    "lint": "prettier --list-different --plugin=prettier-plugin-solidity 'contracts/**/*.sol'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier"
+    }
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=16.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.18.3",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "prettier": "^3.2.5",
+    "prettier-plugin-solidity": "^1.2.0"
+  }
+}
